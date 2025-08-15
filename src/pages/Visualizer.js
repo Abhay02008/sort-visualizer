@@ -91,14 +91,15 @@ function Visualizer() {
         case 'compare':
           setActiveIndices(step.indices);
           break;
-        case 'swap':
-          [newArr[step.indices], newArr[step.indices]] = [
-            newArr[step.indices],
-            newArr[step.indices],
-          ];
-          setArray(newArr);
-          setActiveIndices(step.indices);
-          break;
+       case 'swap':
+  [newArr[step.indices[0]], newArr[step.indices[1]]] = [
+    newArr[step.indices[1]],
+    newArr[step.indices[0]],
+  ];
+  setArray(newArr);
+  setActiveIndices(step.indices);
+  break;
+
         case 'overwrite':
           newArr[step.index] = step.value;
           setArray(newArr);

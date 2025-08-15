@@ -14,7 +14,7 @@ function Home() {
       <section className="hero">
         <h2>Discover the Magic of Sorting Algorithms</h2>
         <p>
-          Visualize sorting algorithms in real time—see how Bubble, Merge, Quick, Heap, Shell, Radix, and Bucket sorts work. Adjust speed, array size, and more. <br /> Shine bright in coding interviews and understand the inner workings of each algorithm!
+          Visualize sorting algorithms in real time: see how Bubble, Merge, Quick, Heap, Shell, Radix, and Bucket sorts work. Adjust speed, array size, and more. <br /> Shine bright in coding interviews and understand the inner workings of each algorithm!
         </p>
         <button onClick={handleStart} style={{ cursor: 'pointer' }}>
           Start Visualizing
