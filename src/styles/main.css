@@ -1,0 +1,124 @@
+body {
+  background: linear-gradient(135deg, #232526, #0f2027, #1a1a1a);
+  color: #f5f6fa;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+nav {
+  background: rgba(20, 20, 20, 0.95);
+  box-shadow: 0 4px 24px 0 rgba(0, 255, 231, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav h1 {
+  color: #00ffe7;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-shadow: 0 0 20px #00ffe7aa;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li {
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0080;
+  text-shadow: 0 0 8px #ff0080bb;
+}
+
+.hero {
+  padding: 5rem 2rem 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #00ffe7;
+  text-shadow: 0 0 20px #00ffe799;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #efeefe;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background: linear-gradient(90deg, #00ffe7 0%, #ff0080 100%);
+  color: #232526;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 0 18px #00ffe799;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+
+.hero button:hover {
+  background: linear-gradient(90deg, #ff0080 0%, #00ffe7 100%);
+  color: #fff;
+  box-shadow: 0 0 32px #ff008088;
+}
+
+.feature-card {
+  background: rgba(25, 26, 30, 0.95);
+  box-shadow: 0 2px 24px 0 rgba(0,255,231,0.11);
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  margin: 1rem;
+  display: inline-block;
+  min-width: 220px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #00ffe7;
+  font-weight: 500;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding: 2rem 0 0.5rem 0;
+  text-align: center;
+  color: #aaa;
+  background: rgba(15, 15, 15, 0.93);
+  border-top: 1px solid #222;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #00ffe7;
+  margin: 0 0.6rem;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ff0080;
+}
