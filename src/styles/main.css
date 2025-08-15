@@ -1,14 +1,17 @@
+/* Global font size increase */
 body {
   background: linear-gradient(135deg, #232526, #0f2027, #1a1a1a);
   color: #f5f6fa;
   font-family: 'Montserrat', 'Roboto', sans-serif;
   min-height: 100vh;
   margin: 0;
+  font-size: 18px; /* Increased base font size */
 }
 
 a {
   color: #00ffe7;
   text-decoration: none;
+  font-size: 1.1rem; /* Slightly increased font */
 }
 
 nav {
@@ -23,7 +26,7 @@ nav {
 nav h1 {
   color: #00ffe7;
   letter-spacing: 2px;
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increased font size */
   text-shadow: 0 0 20px #00ffe7aa;
 }
 
@@ -36,6 +39,7 @@ nav ul {
 nav ul li {
   font-weight: 600;
   transition: color 0.3s;
+  font-size: 1.2rem; /* Increased font size */
 }
 
 nav ul li a:hover {
@@ -51,7 +55,7 @@ nav ul li a:hover {
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* Increased font size */
   color: #00ffe7;
   text-shadow: 0 0 20px #00ffe799;
   margin-bottom: 1rem;
@@ -59,7 +63,7 @@ nav ul li a:hover {
 
 .hero p {
   color: #efeefe;
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* Increased font size */
   margin-bottom: 2rem;
 }
 
@@ -68,8 +72,8 @@ nav ul li a:hover {
   color: #232526;
   border: none;
   border-radius: 30px;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
+  padding: 1.2rem 3rem;
+  font-size: 1.3rem; /* Increased font size */
   font-weight: 700;
   box-shadow: 0 0 18px #00ffe799;
   cursor: pointer;
@@ -82,16 +86,17 @@ nav ul li a:hover {
   box-shadow: 0 0 32px #ff008088;
 }
 
+
 .feature-card {
   background: rgba(25, 26, 30, 0.95);
-  box-shadow: 0 2px 24px 0 rgba(0,255,231,0.11);
+  box-shadow: 0 2px 24px 0 rgba(0, 255, 231, 0.11);
   border-radius: 20px;
   padding: 2rem 1rem;
   margin: 1rem;
   display: inline-block;
   min-width: 220px;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 1.25rem; /* Increased font size */
   color: #00ffe7;
   font-weight: 500;
 }
@@ -110,13 +115,14 @@ footer {
   background: rgba(15, 15, 15, 0.93);
   border-top: 1px solid #222;
   margin-top: 4rem;
-  font-size: 1rem;
+  font-size: 1.2rem; /* Increased font size */
 }
 
 footer a {
   color: #00ffe7;
   margin: 0 0.6rem;
   transition: color 0.3s;
+  font-size: 1.2rem; /* Increased font size */
 }
 
 footer a:hover {

@@ -1,4 +1,5 @@
 import React from 'react';
+import AlgorithmCard from '../components/AlgorithmCard';
 import '../styles/main.css';
 
 const algorithms = [
@@ -15,13 +16,12 @@ const algorithms = [
 
 function Algorithms() {
   return (
-    <div className="algorithm-grid" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '2rem' }}>
-      {algorithms.map(algo => (
-        <div className="feature-card" key={algo.name} style={{ minWidth: '210px', margin: '1rem' }}>
-          <h4>{algo.name}</h4>
-          <p style={{ color: '#efeefe' }}>{algo.desc}</p>
-          {/* Explore functionality to be added later */}
-        </div>
+    <div
+      className="algorithm-grid"
+      style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '2rem' }}
+    >
+      {algorithms.map((algo) => (
+        <AlgorithmCard key={algo.name} name={algo.name} desc={algo.desc} />
       ))}
     </div>
   );
