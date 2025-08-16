@@ -4,10 +4,16 @@ import { useNavigate } from 'react-router-dom';
 function AlgorithmCard({ name, desc }) {
   const navigate = useNavigate();
 
+  // Convert the algorithm name to a consistent algorithm key (camelCase-like)
+  const getAlgoKey = (name) => {
+    // Remove spaces and lowercase the first letter
+    const noSpaces = name.replace(/\s+/g, '');
+    return noSpaces.charAt(0).toLowerCase() + noSpaces.slice(1);
+  };
+
   const handleExplore = () => {
-    // Convert name to lowercase camelCase key to match your algorithm functions
-    const algoKey = name.replace(/\s+/g, '').toLowerCase();
-    navigate('/visualizer', { state: { algorithm: algoKey } });
+    const algoKey = getAlgoKey(name);
+    navigate('/visualizer', { state: { selectedAlgo: algoKey } });
   };
 
   return (
@@ -43,7 +49,7 @@ function AlgorithmCard({ name, desc }) {
           cursor: 'pointer',
         }}
         onClick={(e) => {
-          e.stopPropagation();
+          e.stopPropagation(); // prevent div click event
           handleExplore();
         }}
       >
